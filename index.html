@@ -2,7 +2,7 @@
 <!--
   ════════════════════════════════════════════════════════════════════════
   ELORAIE — Verified Reasoning Infrastructure
-  Copyright (c) 2026 Adam Blake Loos. All Rights Reserved.
+  Copyright (c) 2026 Eloraie. All Rights Reserved.
   PROPRIETARY & CONFIDENTIAL. No license is granted by publication.
   Interactive demos run a deliberately MINIFIED verifier; the real reasoning
   engine (CML / CAIOS) is NOT in this file and remains private.
@@ -16,8 +16,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"/>
 <title>Eloraie — Verified Reasoning Infrastructure</title>
 <meta name="description" content="AI that proves its answer — or refuses. A sound symbolic verifier re-checks every claim from first principles. 0 unsound across 181 re-verified. Built on CML and packaged as CAIOS. Proprietary."/>
-<meta name="author" content="Adam Blake Loos"/>
-<meta name="copyright" content="© 2026 Adam Blake Loos. All Rights Reserved."/>
+<meta name="author" content="Eloraie"/>
+<meta name="copyright" content="© 2026 Eloraie. All Rights Reserved."/>
 <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1"/>
 <link rel="canonical" href="https://eloraie26.github.io/"/>
 <meta property="og:title" content="Eloraie — Verified Reasoning Infrastructure"/>
@@ -38,9 +38,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2305070f'/%3E%3Cpath d='M8 16.5l5 5L24 10' stroke='%2300e6a8' stroke-width='3.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"/>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@graph":[
- {"@type":"Organization","@id":"https://eloraie26.github.io/#org","name":"Eloraie","description":"Proprietary verified-reasoning infrastructure: a sound symbolic verifier that proves each answer or refuses.","foundingDate":"2026","url":"https://eloraie26.github.io/","email":"mailto:samthedog2k2@gmail.com","founder":{"@id":"https://eloraie26.github.io/#adam"}},
- {"@type":"WebSite","@id":"https://eloraie26.github.io/#site","url":"https://eloraie26.github.io/","name":"Eloraie","publisher":{"@id":"https://eloraie26.github.io/#org"}},
- {"@type":"Person","@id":"https://eloraie26.github.io/#adam","name":"Adam Blake Loos","jobTitle":"Founder","worksFor":{"@id":"https://eloraie26.github.io/#org"}}
+ {"@type":"Organization","@id":"https://eloraie26.github.io/#org","name":"Eloraie","description":"Proprietary verified-reasoning infrastructure: a sound symbolic verifier that proves each answer or refuses.","foundingDate":"2026","url":"https://eloraie26.github.io/","email":"mailto:samthedog2k2@gmail.com"},
+ {"@type":"WebSite","@id":"https://eloraie26.github.io/#site","url":"https://eloraie26.github.io/","name":"Eloraie","publisher":{"@id":"https://eloraie26.github.io/#org"}}
 ]}
 </script>
 <style>
@@ -185,6 +184,20 @@ footer{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 56px;colo
 }
 @media(max-width:560px){.g2,.g3,.g4,.stats{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.hi,.reveal{opacity:1;transform:none}}
+
+/* world-class pass: more air, oversized type, canvas constellation */
+h1.big{font-size:clamp(44px,8vw,94px);letter-spacing:-.03em}
+.hero{min-height:100vh;gap:8px}
+.lead{font-size:clamp(20px,2.6vw,30px)}
+.section{padding:120px 0 48px}.sub{margin-bottom:52px}
+.grid{gap:24px}.g3{gap:24px}
+.heroviz{margin-top:34px;width:100%}
+#heroNet{width:100%;max-width:740px;height:clamp(300px,46vw,460px);display:block;margin:0 auto}
+#net{width:100%;max-width:600px;height:460px;display:block;margin:0 auto}
+.panelfull{min-height:auto;padding:64px 0}
+.stat b{font-size:52px}
+@media(max-width:560px){#net,#heroNet{height:320px}}
+
 </style>
 </head>
 <body>
@@ -218,15 +231,7 @@ footer{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 56px;colo
         <div class="cta hi hi4"><button class="btn primary" data-go="products" data-cta="1">▶ Use the products</button><button class="btn" data-go="architecture">How it works</button></div>
       </div>
       <div class="heroviz hi hi5" id="heroviz">
-        <svg viewBox="0 0 520 360" role="img" aria-label="Propose then verify">
-          <defs><marker id="hh" markerWidth="11" markerHeight="11" refX="7" refY="3" orient="auto"><path d="M0 0L7 3L0 6Z" fill="#0071e3"/></marker></defs>
-          <rect x="40" y="150" width="170" height="76" rx="16" fill="rgba(94,92,230,.08)" stroke="#5e5ce6"/><text x="125" y="184" fill="#1d1d1f" font-size="16" font-weight="800" text-anchor="middle">PROPOSE</text><text x="125" y="206" fill="#6e6e73" font-size="12" text-anchor="middle">LLM / search · fallible</text>
-          <rect x="312" y="150" width="170" height="76" rx="16" fill="rgba(29,122,77,.10)" stroke="#1d7a4d" id="vbox"/><text x="397" y="184" fill="#1d1d1f" font-size="16" font-weight="800" text-anchor="middle">VERIFY</text><text x="397" y="206" fill="#6e6e73" font-size="12" text-anchor="middle">CML · sound · sacred</text>
-          <path id="cand" d="M210 188 L308 188" stroke="#0071e3" stroke-width="3" marker-end="url(#hh)" stroke-dasharray="120" stroke-dashoffset="120"/>
-          <text x="260" y="176" fill="#6e6e73" font-size="12" text-anchor="middle">candidate</text>
-          <text x="260" y="262" fill="#1d7a4d" font-size="13" text-anchor="middle" font-weight="800">accept only if proven · else refuse</text>
-          <path d="M397 226 q0 50 -136 50 q-136 0 -136 -50" stroke="#1d7a4d" stroke-width="2" fill="none" stroke-dasharray="5 5" opacity=".6"/>
-        </svg>
+        <canvas id="heroNet" aria-label="Verified reasoning network — Claire cells proposing, CML verifying"></canvas>
       </div>
     </div>
 
@@ -313,9 +318,9 @@ footer{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 56px;colo
     <h2 class="sec">The Constellation of Claires</h2>
     <p class="sub">One “Claire” is a single reasoning cell — generate-then-verify, with its own proof bank. Chain many and you get a federation that stays sound under composition, because every cell <b>re-verifies each fact it receives at the boundary</b>. A lying or faulty cell is contained, never propagated.</p>
     <div class="grid g2" style="align-items:center">
-      <figure class="diagram reveal"><svg viewBox="0 0 400 330" role="img" aria-label="Constellation"><g id="net"></g></svg><figcaption>16 specialist Claires around a shared verifier — each re-checks its neighbors.</figcaption></figure>
+      <figure class="diagram reveal" style="background:transparent;padding:6px"><canvas id="net" aria-label="Animated constellation of verified Claire cells"></canvas><figcaption>A living network — each verified fact pulses to the CML core; soundness preserved at every boundary.</figcaption></figure>
       <div class="panelbox reveal">
-        <div class="kv"><span>Verified-populated cells</span><b class="good">158 / 1024</b></div>
+        <div class="kv"><span>Verified-populated cells</span><b class="good" id="cellCount">158 / 1024</b></div>
         <div class="kv"><span>Specialist Claires (live)</span><b>16</b></div>
         <div class="kv"><span>Reserved capacity</span><b>866</b></div>
         <div class="kv"><span>Unsound facts</span><b class="good">0</b></div>
@@ -359,7 +364,7 @@ footer{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 56px;colo
     <p class="sub">For licensing, partnerships, technical deep-dives, or investor conversations — reach the owner directly.</p>
     <div class="contact reveal">
       <div style="color:var(--mut);font-size:var(--fs-sm);font-weight:750;letter-spacing:.14em;text-transform:uppercase">Owner — Eloraie</div>
-      <div style="font-size:var(--fs-h3);font-weight:850;margin:8px 0 4px">Adam Loos</div>
+      <div style="font-size:var(--fs-h3);font-weight:850;margin:8px 0 4px">Get in touch</div>
       <a class="email" id="mail" href="#">loading…</a>
       <p style="color:var(--mut);max-width:540px;margin:18px auto 0">Eloraie is a company in formation (Indiana, USA). All technology is proprietary and protected. Engine access and the full paper are provided under NDA.</p>
       <div class="cta" style="justify-content:center;margin-top:24px"><a class="btn primary" id="mailbtn" href="#">✉ Email for insight</a><button class="btn" data-go="products">See the products</button></div>
@@ -368,7 +373,7 @@ footer{border-top:1px solid var(--line);margin-top:80px;padding:32px 0 56px;colo
 </main>
 
 <footer><div class="wrap">
-  <div class="legalbox"><b>© 2026 Adam Blake Loos. All Rights Reserved.</b> Eloraie (company in formation — Indiana, USA). This website and all associated products, names, designs, and content are <b>proprietary and confidential</b>. No license — open-source or otherwise — is granted by publication. The interactive demos run a deliberately minified verifier; the core reasoning engine (CML / CAIOS) is <b>not</b> included here and remains private. CiteGuard, Verified Clinical Calculator, CAIOS, CML, and the Constellation of Claires are marks of the owner. Unauthorized copying, reuse, scraping, or redistribution is prohibited. Patent rights reserved where applicable. Not medical, legal, or financial advice.</div>
+  <div class="legalbox"><b>© 2026 Eloraie. All Rights Reserved.</b> Eloraie (company in formation — Indiana, USA). This website and all associated products, names, designs, and content are <b>proprietary and confidential</b>. No license — open-source or otherwise — is granted by publication. The interactive demos run a deliberately minified verifier; the core reasoning engine (CML / CAIOS) is <b>not</b> included here and remains private. CiteGuard, Verified Clinical Calculator, CAIOS, CML, and the Constellation of Claires are marks of the owner. Unauthorized copying, reuse, scraping, or redistribution is prohibited. Patent rights reserved where applicable. Not medical, legal, or financial advice.</div>
   <div style="display:flex;gap:18px;flex-wrap:wrap;align-items:center"><span>ELORAIE — Verified Reasoning Infrastructure</span><span style="margin-left:auto">Honest two-number reporting · 0 unsound · built &amp; verified, not hyped</span></div>
 </div></footer>
 
@@ -398,8 +403,27 @@ setTimeout(heroIntro,300);
 /* ---------- email (assembled at runtime) ---------- */
 (function(){var a=['sam','the','dog','2k2'].join('')+'@'+'gmail.com',s='?subject='+encodeURIComponent('Eloraie — request for insight');var m=document.getElementById('mail');m.textContent=a;m.href='mailto:'+a+s;document.getElementById('mailbtn').href='mailto:'+a+s;function tc(){track('contact_email_click',{});}m.addEventListener('click',tc);document.getElementById('mailbtn').addEventListener('click',tc);})();
 
-/* ---------- constellation graphic ---------- */
-(function(){var g=document.getElementById('net');if(!g)return;var NS='http://www.w3.org/2000/svg',cx=200,cy=165,R=120,ring=[];for(var i=0;i<16;i++){var a=i/16*Math.PI*2,x=cx+Math.cos(a)*R,y=cy+Math.sin(a)*R*.92;ring.push([x,y]);var l=document.createElementNS(NS,'line');l.setAttribute('x1',cx);l.setAttribute('y1',cy);l.setAttribute('x2',x);l.setAttribute('y2',y);l.setAttribute('stroke','rgba(0,0,0,.12)');g.appendChild(l);}for(i=0;i<16;i++){var p=ring[i],q=ring[(i+1)%16],l2=document.createElementNS(NS,'line');l2.setAttribute('x1',p[0]);l2.setAttribute('y1',p[1]);l2.setAttribute('x2',q[0]);l2.setAttribute('y2',q[1]);l2.setAttribute('stroke','rgba(0,0,0,.12)');g.appendChild(l2);}ring.forEach(function(p){var c=document.createElementNS(NS,'circle');c.setAttribute('cx',p[0]);c.setAttribute('cy',p[1]);c.setAttribute('r',7);c.setAttribute('fill','#5e5ce6');c.setAttribute('stroke','#ffffff');c.setAttribute('stroke-width',2);g.appendChild(c);});var h=document.createElementNS(NS,'circle');h.setAttribute('cx',cx);h.setAttribute('cy',cy);h.setAttribute('r',17);h.setAttribute('fill','#1d7a4d');g.appendChild(h);var t=document.createElementNS(NS,'text');t.setAttribute('x',cx);t.setAttribute('y',cy+4);t.setAttribute('text-anchor','middle');t.setAttribute('fill','#04130f');t.setAttribute('font-size',10);t.setAttribute('font-weight',900);t.textContent='CML';g.appendChild(t);})();
+/* ---------- constellation: animated verified-network (canvas) ---------- */
+function makeNet(id,big){var cv=document.getElementById(id);if(!cv)return null;var ctx=cv.getContext('2d'),DPR=Math.min(window.devicePixelRatio||1,2);var W=0,H=0,nodes=[],pulses=[],ripples=[],coreFlash=0,raf=0,run=false,last=0,acc=0;var RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function resize(){var r=cv.getBoundingClientRect();if(!r.width||!r.height)return false;W=r.width;H=r.height;cv.width=W*DPR;cv.height=H*DPR;ctx.setTransform(DPR,0,0,DPR,0,0);build();return true;}
+function build(){nodes=[];var N=big?34:28,R=Math.min(W,H)*0.44;for(var i=0;i<N;i++){var ring=i%3,rr=R*(0.5+ring*0.24),a=(i/N)*6.283+ring*0.5;nodes.push({a0:a,r0:rr,ph:Math.random()*6.283,sp:0.15+Math.random()*0.25,x:0,y:0,br:0});}}
+function pos(n,t){var a=n.a0+t*0.00003;n.br=Math.sin(t*0.001*n.sp+n.ph)*0.5+0.5;var rr=n.r0*(1+n.br*0.03);n.x=W/2+Math.cos(a)*rr;n.y=H/2+Math.sin(a)*rr*0.88;}
+function spawn(){if(nodes.length)pulses.push({n:nodes[(Math.random()*nodes.length)|0],p:0});}
+function paint(t,moving){var cx=W/2,cy=H/2;ctx.clearRect(0,0,W,H);for(var i=0;i<nodes.length;i++)pos(nodes[i],t);
+ ctx.lineWidth=1;var TH=W*0.17;for(var i=0;i<nodes.length;i++)for(var j=i+1;j<nodes.length;j++){var p=nodes[i],q=nodes[j],dx=p.x-q.x,dy=p.y-q.y,d=Math.sqrt(dx*dx+dy*dy);if(d<TH){ctx.strokeStyle='rgba(29,29,31,'+(0.05*(1-d/TH))+')';ctx.beginPath();ctx.moveTo(p.x,p.y);ctx.lineTo(q.x,q.y);ctx.stroke();}}
+ ctx.strokeStyle='rgba(94,92,230,0.05)';for(var i=0;i<nodes.length;i++){ctx.beginPath();ctx.moveTo(cx,cy);ctx.lineTo(nodes[i].x,nodes[i].y);ctx.stroke();}
+ for(var i=pulses.length-1;i>=0;i--){var pu=pulses[i];if(moving)pu.p+=0.018;if(pu.p>=1){pulses.splice(i,1);coreFlash=1;ripples.push({r:16,a:.9});continue;}var ee=pu.p*pu.p*(3-2*pu.p),px=pu.n.x+(cx-pu.n.x)*ee,py=pu.n.y+(cy-pu.n.y)*ee;ctx.strokeStyle='rgba(29,122,77,'+(0.5-pu.p*0.4)+')';ctx.lineWidth=1.4;ctx.beginPath();ctx.moveTo(pu.n.x,pu.n.y);ctx.lineTo(px,py);ctx.stroke();ctx.fillStyle='rgba(29,122,77,'+(1-pu.p*0.25)+')';ctx.beginPath();ctx.arc(px,py,3.4,0,6.283);ctx.fill();}
+ for(var i=ripples.length-1;i>=0;i--){var rp=ripples[i];if(moving){rp.r+=1.4;rp.a-=0.018;}if(rp.a<=0){ripples.splice(i,1);continue;}ctx.strokeStyle='rgba(29,122,77,'+rp.a+')';ctx.lineWidth=1.5;ctx.beginPath();ctx.arc(cx,cy,rp.r,0,6.283);ctx.stroke();}
+ for(var i=0;i<nodes.length;i++){var n=nodes[i];ctx.fillStyle='rgba(94,92,230,'+(0.4+n.br*0.4)+')';ctx.beginPath();ctx.arc(n.x,n.y,2.6+n.br*1.6,0,6.283);ctx.fill();}
+ if(moving)coreFlash*=0.92;var crf=15+coreFlash*6;ctx.fillStyle='rgba(29,122,77,'+(coreFlash*0.22)+')';ctx.beginPath();ctx.arc(cx,cy,crf+12,0,6.283);ctx.fill();ctx.fillStyle='#1d1d1f';ctx.beginPath();ctx.arc(cx,cy,crf,0,6.283);ctx.fill();ctx.fillStyle='#fff';ctx.font='700 11px -apple-system,Helvetica,Arial,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('CML',cx,cy);}
+function frame(t){if(!run)return;if(!last)last=t;var dt=t-last;last=t;acc+=dt;if(acc>1500){acc=0;spawn();}paint(t,true);raf=requestAnimationFrame(frame);}
+return{start:function(){if(run)return;if(!resize())return;if(RM){spawn();spawn();paint(0,false);return;}run=true;last=0;raf=requestAnimationFrame(frame);},stop:function(){run=false;cancelAnimationFrame(raf);},resize:function(){var was=run;if(was){run=false;cancelAnimationFrame(raf);}resize();if(was){run=true;last=0;raf=requestAnimationFrame(frame);}}};}
+var HERO=makeNet('heroNet',true),NET=makeNet('net',false);
+function netSwitch(id){if(id==='overview'){NET&&NET.stop();HERO&&HERO.start();}else if(id==='constellation'){HERO&&HERO.stop();NET&&NET.start();countUp(document.getElementById('cellCount'),158,1300);}else{HERO&&HERO.stop();NET&&NET.stop();}}
+function countUp(el,to,ms){if(!el)return;var st=0;function f(t){if(!st)st=t;var p=Math.min(1,(t-st)/ms),e=p*p*(3-2*p);el.textContent=Math.round(to*e)+' / 1024';if(p<1)requestAnimationFrame(f);}requestAnimationFrame(f);}
+var _origShow=show;show=function(id){_origShow(id);netSwitch(id);};
+addEventListener('resize',function(){HERO&&HERO.resize();NET&&NET.resize();});
+setTimeout(function(){HERO&&HERO.start();},80);
 
 /* ---------- protected paper: AES-256-GCM decrypt (Web Crypto) ---------- */
 var PAPER_BLOB="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";
